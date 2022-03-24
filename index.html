@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Stuies</title>
+    <style>
+      h1,
+      p {
+        text-align: center;
+        text-transform: uppercase;
+      }
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Array Studies</h1>
+    <p><span>Methods :</span> pop, push, shift, unschift</p>
+
+    <script>
+      var land = new Array(
+        "Türkei",
+        "Deutschland",
+        "Portugal",
+        "Frankreich",
+        "Polen",
+        "Schweiz"
+      );
+
+      console.log(land);
+
+      var removed = land.pop();
+      console.log(land);
+
+      var input = "Belarus";
+      land.push(input);
+      console.log(land);
+
+      var inputFirst = "Ukraine";
+      land.unshift(inputFirst);
+      console.log(land);
+
+      var removeFirst = land.shift();
+      console.log(land);
+    </script>
+  </body>
+</html>
